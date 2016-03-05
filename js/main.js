@@ -1,8 +1,6 @@
 $(document).ready(function(){
 var heightOfScreen=screen.height;
-var wid=$('body').width();  
-alert(wid);    
-alert(heightOfScreen);    
+var wid=$('body').width();    
 switch(heightOfScreen)
 {   case 240: $('section').css({"padding-top":"0px"});
                 $('.intro').css({"margin-top":"20px"});   
@@ -47,9 +45,6 @@ switch(heightOfScreen)
                 $('#googleMap').css({"height":"450px"});    
                   $('#contact').css({"padding-bottom":"90px"});  
                 break;  
-    case 667: $('section').css({"padding-top":"590px"});
-                $('.intro').css({"margin-top":"20px"});   
-                break;    
     case 800:   $('.home_section').css({"padding-top":"250px"});
                 $('.down_button_black').css({"margin-top":"25px"});
                 break;
