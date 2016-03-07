@@ -17,7 +17,7 @@ switch(heightOfScreen)
                 $('#services .row img').css({"width":"20%"});
                 $('#services h3').css({"margin-top":"15px"});
                 $('#services .down_button').css({"width":"18%"});
-                $('#clients .heading').css({"margin-top":"30px"});
+                $('#clients .heading').css({"margin-top":"50px"});
                 $('#clients .col-xs-2 img').css({"margin-top":"80px"});
                 $('#clients .col-xs-8 img').css({"width":"70%","margin-bottom":"-30px"});
                 $('#map .heading').css({"margin-top":"20px"});
@@ -25,6 +25,7 @@ switch(heightOfScreen)
                 $('#contact .heading').css({"margin-top":"0px"});
                 break;
     case 480:   $('section').css({"padding-top":"60px","padding-bottom":"50px"});
+                   $('#services .heading').css({"margin-top":"-20px","margin-bottom":"10px"});
                 $('#map').css({"padding-top":"30px"});
                   $('#contact').css({"padding-bottom":"10px"});    
                 break;
@@ -69,7 +70,9 @@ switch(heightOfScreen)
           $('input[type=text]').css({"height":"60px"});    
           $('.btn').css({"height":"60px"});    
           $('#contact').css({"padding-top":"80px","padding-bottom":"310px"});
-                break;    
+                break; 
+    case 1334:  $('#services .heading').css({"margin-top":"20px","margin-bottom":"10px"});
+                break;
 }     
 
 /*************Page Scrolling**********/
