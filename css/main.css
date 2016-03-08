@@ -193,7 +193,7 @@ span {
   }
   .envelope {
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: -10px;
   }
   #contact {
     padding-bottom: 0px;
