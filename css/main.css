@@ -205,6 +205,21 @@ span {
     margin-top: -40px;
   }
 }
+@media (min-width:375px)
+{
+    #services .heading{
+    margin-top:100px;
+    }
+    #contact{
+    padding-bottom: :80px;
+    }
+    .home_section .down_button{
+    margin-top: 80px;
+    }
+    .both_sec .down_button,#services .down_button{
+    margin-top: 10px;
+    }
+}
 @media (min-width: 414px)
 {
     #services .heading{
