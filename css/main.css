@@ -253,6 +253,10 @@ span {
     #map{
     padding:0;
     }
+    #map .down_button{
+    margin-top:20px  
+      
+    }
     #contact{
     padding-top :170px;
     padding-bottom :170px;
