@@ -216,7 +216,10 @@ span {
     .home_section .down_button{
     margin-top: 80px;
     }
-    .both_sec .down_button,#services .down_button{
+    .both_sec .down_button{
+    margin-top:10px;  
+    }
+    #services .down_button{
     margin-top: 10px;
     }
 }
