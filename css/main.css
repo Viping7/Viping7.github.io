@@ -474,6 +474,9 @@ span {
   #services {
     padding-top: 10px;
   }
+   #services .heading{
+    margin-top: 0px;
+  }
   .heading {
     margin-top: -10px;
   }
