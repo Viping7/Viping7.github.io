@@ -474,14 +474,15 @@ span {
   #services {
     padding-top: 10px;
   }
-   #services .heading{
-    margin-top: 0px;
-  }
+  
   .heading {
     margin-top: -10px;
   }
   .client_image {
     margin: 40px 20px 70px 30px;
+  }
+   #services .heading{
+    margin-top: -30px;
   }
   .arrows {
     margin-top: 40px;
