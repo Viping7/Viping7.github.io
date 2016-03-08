@@ -41,7 +41,7 @@ switch(heightOfScreen)
                 $('#services .row img').css({"width":"30%","margin-bottom":"30px;"});
                 $('.down_button_black').css({"margin-top":"35px"});
                 $('#map').css({"padding-top":"0px"});
-                $('#map .heading').css({"margin-top":"-80px"});
+                $('#map .heading').css({"margin-top":"0px"});
                 $('#googleMap').css({"height":"350px"});
                 $('#contact').css({"padding-top":"0px","padding-bottom":"40px"});
                 $('#contact .heading').css({"margin-top":"90px"});
