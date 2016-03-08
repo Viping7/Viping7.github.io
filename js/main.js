@@ -46,6 +46,12 @@ switch(heightOfScreen)
                 $('#contact').css({"padding-top":"0px","padding-bottom":"40px"});
                 $('#contact .heading').css({"margin-top":"90px"});
                 break;
+    case 627:   $('#services .heading').css({"margin-top":"100px"});
+                $('#contact').css({"padding-bottom":"80px"});
+                $('.home_section .down_button').css({"margin-top":"80px"});
+                $('.both_sec .down_button').css({"margin-top":"10px"});
+                $('#services .down_button').css({"margin-top":"10px"});
+                break;               
     case 640:   $('.home_section').css({"padding-top":"180px","padding-bottom":"65px"}); 
                 $('#services').css({"padding-top":"50px"});
                 $('#services .row img').css({"width":"35%","margin-bottom":"30px;"});
