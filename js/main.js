@@ -65,7 +65,8 @@ switch(heightOfScreen)
     case 800:   $('.home_section').css({"padding-top":"250px"});
                 $('.down_button_black').css({"margin-top":"25px"});
                 break;
-     
+    case 900:    $('section').css({"padding-top":"100px","padding-bottom":"80px"});  
+                break; 
     case 1280:    $('.home_section').css({"padding-top":"420px","padding-bottom":"80px"});  
         $('.down_button').css({"margin-top":"390px"});  
         $('.down_button_black').css({"margin-top":"290px"});  
