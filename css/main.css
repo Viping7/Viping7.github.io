@@ -603,6 +603,9 @@ span {
     font-size: 3.5em;
     margin-bottom: 120px;
   }
+  #services .heading{
+    margin-top:0px;
+  }
   #googleMap {
     height: 440px;
   }
