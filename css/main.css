@@ -673,6 +673,9 @@ span {
   #googleMap {
     height: 490px;
   }
+  #services {
+    .heading:-20px;
+  }
   #contact {
     padding-top: 0px;
   }
