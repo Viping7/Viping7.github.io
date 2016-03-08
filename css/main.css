@@ -579,6 +579,10 @@ span {
   }
 }
 @media (min-width: 1438px) {
+  section{
+  padding-top:100px;  
+  padding-bottom:80px;
+  }
   .geek_label_logo {
     margin-top: 10px;
   }
