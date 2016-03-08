@@ -1,6 +1,8 @@
 $(document).ready(function(){
 var heightOfScreen=screen.height;
 var wid=$('body').width();    
+alert(wid);
+alert(heightOfScreen);
 switch(heightOfScreen)
 {   case 240: $('section').css({"padding-top":"0px"});
                 $('.intro').css({"margin-top":"20px"});   
