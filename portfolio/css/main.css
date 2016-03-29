@@ -1,0 +1,143 @@
+@fontface{
+font-family:bakersfield;    
+src:url('../fonts/Bakersfield%20Light.ttf');
+}
+@fontface{
+font-family:bakersfield;    
+src:url('../fonts/Bakersfield%20Bold.ttf');
+font-weight:bold;    
+}
+body{
+padding:0px;
+font-family: 'bakersfield',calibri;
+color:#2d2d2d;     
+text-align:center;  
+}
+
+nav,h1,h2{
+font-weight:bold;
+}
+section{
+padding:50px 0px;
+}
+#navbar{
+background-color: rgba(256, 256, 256, 0.9);
+}
+#navbar  button.navbar-toggle{
+border: none;
+}
+#navbar button span.icon-bar{
+background:#b6cc7a;
+}
+#navbar button:hover{
+background:none;
+transform: scale(1.1);
+}
+#navbar .navbar-nav li{
+margin:0 20px;
+}
+#navbar .navbar-nav > li.active > a{
+background:none;
+color:#b6cc7a;    
+}
+#sec_1{
+padding: 0;    
+background: url(Layer-1.png) no-repeat;     
+}
+#sec_1 h1{
+font-size:1em;
+margin-top:80px;    
+}
+#sec_1 .img-responsive{
+width:30%;
+}
+.img-responsive{
+display: inline-block;
+}
+#sec_1 .scroll_button{
+display: inline-block;
+position: relative;   
+}
+#sec_2 img{
+margin-top:80px;
+}
+#sec_3{
+background: #fcfcfc;
+}
+#sec_3 p{
+margin-top:50px;    
+text-align: left;
+}
+  #sec_4 .container{
+    transform: rotate(90deg);
+    }
+    #sec_4 .container .col-xs-2,#sec_4 .container .col-xs-3{
+    transform:rotate(-90deg);
+    }
+    
+#sec_3 button{
+border:1px solid #b6cc7a;
+padding:15px 40px;    
+background: none;
+font-size:1em;    
+}
+#sec_4 .skills_row{
+margin-top:0px;
+}
+#sec_4 .skills_row .col-xs-6{
+margin-bottom:50px;
+}
+#sec_4 h1{
+margin-bottom:40px;
+}
+footer{
+background:#b6cc7a;
+font-weight:bold;    
+}
+footer .social-icons li{
+display:inline-block;
+margin:30px;    
+}
+footer .social-icons li > a{
+color:#2d2d2d;
+}
+footer .social-icons li > a:hover{
+color:#fff;
+}
+/*****************************Media Queries*****************************/
+@media(min-width:320px)
+{
+    #sec_1 h1{
+    font-size:1.6em;
+    margin-top:130px;    
+    }
+  
+}
+@media(min-width:760px)
+{
+    #sec_1 h1{
+    font-size:2.5em;
+    margin-top:200px;    
+    }
+    #sec_4 .container{
+    transform: rotate(0deg);
+    }
+    #sec_4 .container .col-xs-2,#sec_4 .container .col-xs-3{
+    transform:rotate(0deg);
+    }
+    
+}
+@media(min-width:1050px){
+    #sec_2 h1{
+    margin-top:100px;
+    }
+    #sec_3  {
+        padding-top:130px;   
+    }
+    #sec_3 p{
+    font-size:1.9em;
+    }
+    #sec_4 .skills_row{
+margin-top:30px;
+}
+}
