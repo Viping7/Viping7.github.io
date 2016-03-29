@@ -1,174 +1,89 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Vipin Gopinath</title>
-        <meta charset="utf-8">
+        <title>Weather</title>
+        <link rel='stylesheet' href="css/bootstrap.min.css"/>
+        <link rel='stylesheet' href="css/main.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="stylesheet" href='css/bootstrap.min.css'/>
-        <link rel='stylesheet' href="css/main.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
-        <link rel='stylesheet' href="css/animate.min.css">
-         <link rel="shortcut icon" href="images/icon/apple-touch-icon-320-precomposed.png.png"> 
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/icon/apple-touch-icon-57-precomposed.png">
-    
-        <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/respond.min.js"></script>
-        <![endif]-->   
-        
+        <meta charset="utf-8">    
+        <script src='js/jquery.js'></script>   
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+       <script src="js/location.js"></script>
+        <script src="js/ui.js"> </script>
     </head>
-    <body>
-        <div id="preloader">
-            <div id='status'>&nbsp;</div>
-        </div>
-        <header> 
-            <nav class="navbar navbar-default navbar-fixed-top" id='navbar' >
-                <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button> 
-                    <a class="navbar-brand"><img src='images/components/logo.png' class="img-responsive" alt=''></a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav  navbar-right">
-                        <li class="active"><a href='index.html'>Home</a></li>
-                        <li><a href='works.html'>Works</a></li>
-                        <li><a href='connect.html'>Connect</a></li>
-                    </ul>
-                </div>
-                </div>    
-            </nav>
-        </header>
-        <section id='sec_1' class="back">
-            <div class="container-fluid">
-                <div id="element1">
-                    <p>Hi I am Vipin Gopinath<br>Web and Graphic designer</p>
-</div>
-                <h1 class='element'></h1>
-                <div class="scroll_button">
-                <img src='images/components/mouse.png' class="img-responsive" alt=''>
-                <p>Scroll down</p>  
-                </div>    
-            </div>
-        </section>
-        <section id='sec_2'>
-            <div class="container">
-                <div class="row">
-                    <h1>Services I provide</h1>
-                    <div class="col-sm-4">
-                        <img src='images/services/design.png' class="img-responsive" alt=''>
-                        <h3>Web Design</h3>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src='images/services/development.png' class="img-responsive" alt=''>
-                        <h3>Web Development</h3>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src='images/services/logo.png' class="img-responsive" alt=''>
-                        <h3>Logo Design</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id='sec_3'>
-            <div class="container-fluid">
-                <div class="row">
-                    <h1>About me</h1>
-                    <div class="col-md-push-8 col-sm-4">
-                        <img src='images/components/music.png' class="img-responsive" alt=''>
-                    </div>
-                    <div class="col-md-pull-3  col-sm-8 ">
-                        
-                        <p>I am 21 year old Web designer from Hyderabad, India.I have been designing web sites for 2 years with a chunk of experience under my hood.
-I am creative and always eager try out new things.I love listening to music and reading books.I also experiment with css and jquery often.</p>
-                        <button>View My Resume</button>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <section id='sec_4'>
-            <div class="container-fluid">
-                <div class="row">
-                     <h1 class='col-md-offset-3'>My Skills</h1>
-                    <div class="col-sm-4">
-                        <img src='images/components/skills.png' class="img-responsive" alt=''>
-                    </div>
-                    
-                    <div class="col-sm-8">
-                       
-                        <div class="row skills_row">
-                            <div class="col-md-2 col-sm-3 col-xs-6">
-                                <img src="images/skills/certificate.png" class="img-responsive" alt=''>
-                            </div>
-                            <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
-                                <img src="images/skills/certificate2.png" class="img-responsive" alt=''>
-                            </div><div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-6 ">
-                                 <img src="images/skills/certificate3.png" class="img-responsive" alt=''>
-                            </div>
-                            <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-6 ">
-                                <img src="images/skills/certificate4.png" class="img-responsive" alt=''>
-                            </div>
-                        </div>
-                        <div class="row skills_row">
-                            <div class="col-md-2 col-sm-3 col-xs-6 ">
-                                <img src="images/skills/certificate6.png" class="img-responsive" alt=''>
-                            </div>
-                            <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-6 ">
-                                <img src="images/skills/certificate5.png" class="img-responsive" alt=''>
-                            </div><div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-6 ">
-                                <img src="images/skills/certificate7.png" class="img-responsive" alt=''>
-                            </div>
-                            <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-6 ">
-                                <img src="images/skills/certificate8.png" class="img-responsive" alt=''>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="container-fluid">
-                 <ul class="social-icons">
-                        <li><a href="https://www.facebook.com/vipin.gopinath.92"><i class="fa fa-facebook fa-2x"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-                        <li><a href="https://in.linkedin.com/in/vipin-gopinath-a9759310b"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                        <li><a href="https://github.com/Viping7/"><i class="fa fa-github fa-2x"></i></a></li>
-                    </ul>
-                <p>Designed and coded by Me</p>
-            </div>
-        </footer> 
-        <script src='js/jquery.js'></script>
-        <script src='js/main.js'></script>
-        <script src='js/bootstrap.min.js'></script>
-        <script src="js/typed.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/smoothscroll.js"></script>
-        <script>
-            $('#navbar').hide();
-             $(window).load(function() {
-    $("#status").fadeOut();
-   $("#preloader").delay(1000).fadeOut("slow");
-    $('body').css({'overflow-y':'scroll'});
-    $('#navbar').delay(1000).fadeIn("10000");            
-    });
+<body>
+<!--Top Section-->
+<header>
+<h1>Weather<span>cast</span></h1>
+        <div class="row">   
+        <div class="col-sm-3 col-sm-offset-3">
              
-        </script>
-  
-
-
-
-
-    </body>
+        <button id='automatic' class='btn'>Instant weather</button>
+            </div>
+         <div class="col-sm-3">
+             
+        <button class='btn' id='manual'>Via Pincode</button>
+            </div>    
+        </div>     
+</header>
+<!--Top Section-->
+<!-- Pincode section -->    
+<section id='pincodesearch'>
+    <h2>Please enter your pincode for weather updates</h2>
+    <div class="col-md-6 col-md-offset-3">
+        <form onsubmit='return false;'>
+            <div class="form-group">
+                <div class="col-md-10 ">
+                <input type='text' class='form-control' required placeholder='Enter your pin code' id='pincode'>
+                </div>
+                <div class="col-md-2">
+                <button class="btn btn-success form-control"  id='search'>Go</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+</section>      
+<!-- Pincode section --> 
     
+<!-- Weather Report -->    
+<section id='weather'>
+    <div class="row">
+       
+        <div class="col-md-8 col-md-offset-2" id='weatherreport'>
+             <div id='image'></div>
+            <h4 id='city'></h4>
+            <h4 id='country'></h4>
+            <h4 id='desc'></h4>
+            <table class="table">
+            <tr>
+            <td><img src='images/temp.png' class="img-responsive"/>Temperature</td>
+            <td id='temperature'></td>    
+            </tr>
+            <tr>
+            <td><img src='images/pressure.png' class="img-responsive"/>Pressure</td>
+            <td id='pressure'></td>    
+            </tr>
+            <tr>
+            <td><img src='images/humidity.png' class="img-responsive"/>Humidity</td>
+            <td id='humidity'></td>    
+            </tr>
+            <tr>
+            <td><img src='images/wind.png' class="img-responsive"/>Wind</td>
+            <td id='wind'></td>    
+            </tr> 
+            <tr>
+            <td><img src='images/Sunrise.png' class="img-responsive"/>Sunrise</td>
+            <td id='sunrise'></td>    
+            </tr>
+            <tr>
+            <td><img src='images/sunset.png' class="img-responsive"/>Sunset</td>
+            <td id='sunset'></td>    
+            </tr>    
+            </table>
+        </div> 
+    </div>
+</section>    
+
+
+</body>
 </html>
