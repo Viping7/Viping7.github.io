@@ -33,6 +33,10 @@ background:#b6cc7a;
 background:none;
 transform: scale(1.1);
 }
+#navbar .navbar-brand{
+width:70px;
+margin-top:-10px;
+}
 #navbar .navbar-nav li{
 margin:0 20px;
 }
@@ -42,7 +46,7 @@ color:#b6cc7a;
 }
 #sec_1{
 padding: 0;    
-background: url(Layer-1.png) no-repeat;     
+background: url(../images/background/background.png) no-repeat;     
 }
 #sec_1 h1{
 font-size:1em;
@@ -68,6 +72,7 @@ background: #fcfcfc;
 margin-top:50px;    
 text-align: left;
 }
+
   #sec_4 .container{
     transform: rotate(90deg);
     }
@@ -79,7 +84,15 @@ text-align: left;
 border:1px solid #b6cc7a;
 padding:15px 40px;    
 background: none;
-font-size:1em;    
+font-size:1em;  
+margin-top:50px;    
+transition: background 1s,color 0.5s;
+}
+#sec_3 button:hover{
+font-weight:bold;
+background:#b6cc7a;
+border-color:#fff;
+color:#fff;    
 }
 #sec_4 .skills_row{
 margin-top:0px;
@@ -104,12 +117,36 @@ color:#2d2d2d;
 footer .social-icons li > a:hover{
 color:#fff;
 }
+#preloader{
+position:absolute;
+left:0;
+right:0;
+top:0;
+background:#fefefe;
+z-index:99;
+height:100%;    
+}
+#status  {
+     width: 200px;
+     height: 200px; 
+     position: absolute; 
+     left: 50%;
+     top: 50%;
+     background-image: url('../images/components/logo.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+ }
+
 /*****************************Media Queries*****************************/
 @media(min-width:320px)
 {
     #sec_1 h1{
     font-size:1.6em;
     margin-top:130px;    
+    }
+     #sec_3 p{
+    font-size:1.4em;
     }
   
 }
@@ -128,6 +165,7 @@ color:#fff;
     
 }
 @media(min-width:1050px){
+
     #sec_2 h1{
     margin-top:100px;
     }
@@ -137,7 +175,12 @@ color:#fff;
     #sec_3 p{
     font-size:1.9em;
     }
+    #sec_3 button{
+    border-width:2px;
+    font-size:1.4em;
+    }
     #sec_4 .skills_row{
 margin-top:30px;
 }
+    
 }
