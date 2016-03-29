@@ -1,13 +1,8 @@
 $(document).ready(function(){
 resizeDiv();
 /**********Typed********************/
-$(function(){
-      $(".element").typed({
-        stringsElement: $('#element1'),
-        typeSpeed: 0,
-        showCursor:false  
-      });
-  });
+
+
 /****************************************/    
 });
 /****************Division Resize*************/
@@ -44,6 +39,14 @@ $("#status").fadeOut();
 $("#preloader").delay(1000).fadeOut("slow");
 $('body').css({'overflow-y':'scroll'});
 $('#navbar').delay(1000).fadeIn("10000");            
-    });    
+    
+$(function(){
+      $(".element").typed({
+        stringsElement: $('#element1'),
+        typeSpeed: 0,
+        showCursor:false  
+      });
+  });
+});    
 
 }
