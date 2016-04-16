@@ -43,9 +43,7 @@ function resizeDiv() {
 vpw = $(window).width();
 vph = $(window).height();
 $('.back').css({'height': vph + 'px','background-size':'100% '+vph+'px'});  
-if(vpw>1000){
-$('section').css({'height': vph + 'px','background-size':'100% '+vph+'px'});  
-}    
+  
 if(vpw<300)
 {
 var scrollbutpos=vph-200;    
