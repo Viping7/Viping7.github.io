@@ -1,0 +1,45 @@
+section{
+padding-bottom: 0px;
+}
+
+.heading{
+margin-bottom: 10px;
+}
+p{
+font-weight:bold    ;
+}
+section .img-responsive{
+width:350px;
+box-shadow: 1px 1px 10px 1px #ddd;
+margin-bottom: 50px;}
+#work_2{
+background: #fcfcfc;
+}
+.buton{
+border:1px solid #82ca9c;
+padding:10px 40px;    
+background: none;
+font-size:1em;  
+color:#2d2d2d;    
+transition: background 1s,color 0.5s;
+font-weight:bold;
+}
+.buton:hover{
+
+background:#82ca9c;
+border-color:#fff;
+color:#fff;    
+text-decoration: none;
+}
+footer{
+margin-top:50px;
+}
+@media(min-width:1050px){
+
+    .buton{
+    border-width:2px;
+    font-size:1.4em;
+    }
+
+    
+}

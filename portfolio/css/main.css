@@ -28,7 +28,7 @@ background-color: rgba(256, 256, 256, 0.9);
 border: none;
 }
 #navbar button span.icon-bar{
-background:#b6cc7a;
+background: #82ca9c;
 }
 #navbar button:hover{
 background:none;
@@ -43,11 +43,11 @@ margin:0 20px;
 }
 #navbar .navbar-nav > li.active > a{
 background:none;
-color:#b6cc7a;    
+color:#82ca9c;    
 }
 #sec_1{
 padding: 0;    
-background: url(../images/background/background.png) no-repeat;     
+background:#fefefe url(../images/background/background2.png) no-repeat;     
 }
 #sec_1 h1{
 font-size:1em;
@@ -64,7 +64,18 @@ display: inline-block;
 position: relative;   
 }
 #sec_2 img{
-margin-top:80px;
+margin-top:20px;
+width: 300px;
+}
+
+#sec_2 h3{
+font-weight: bold;    
+}
+#sec_2 .design{
+margin-bottom:90px;
+}
+#sec_2 .design h4:first-of-type {
+margin-top:32px;
 }
 #sec_3{
 background: #fcfcfc;
@@ -81,31 +92,68 @@ text-align: left;
     transform:rotate(-90deg);
     }
     
-#sec_3 button{
-border:1px solid #b6cc7a;
+#sec_3 .buton{
+border:1px solid #82ca9c;
 padding:15px 40px;    
 background: none;
 font-size:1em;  
+color:#82ca9c;    
+font-weight:bold;    
 margin-top:50px;    
 transition: background 1s,color 0.5s;
 }
-#sec_3 button:hover{
-font-weight:bold;
-background:#b6cc7a;
+#sec_3 .buton:hover{
+
+background:#82ca9c;
 border-color:#fff;
 color:#fff;    
+text-decoration: none;
 }
-#sec_4 .skills_row{
-margin-top:0px;
+#sec_4 .skillsec{
+margin-bottom: 50px;
 }
-#sec_4 .skills_row .col-xs-6{
+#sec_4 .bar-section{
+margin-top:-25px;
+}
+#sec_4 .skill-bar .bar-container{
+padding:0px;
+margin:10px 0px;    
+    
+border:1px solid #ddd;
+transform: rotate(180deg)    
+}
+#sec_4 .skill-bar .bar-container .bar{
+background:#82ca9c;     
+margin:-8px 2px;
+transform:  rotate(180deg);
+text-align: right;    
+}
+#html{
+width:96.5%;
+}
+#javascript{
+width:78%;
+}
+#bootstrap{
+width: 40%;
+}
+#php{
+width: 19%;
+}
+#wordpress{
+width:11.5%;
+}
+#sec_4 h5{
+padding:5px;
+    color:#fff;}
+
+.heading{
 margin-bottom:50px;
-}
-#sec_4 h1{
-margin-bottom:40px;
+margin-top:50px;
+color: #82ca9c;
 }
 footer{
-background:#b6cc7a;
+background:#82ca9c;
 font-weight:bold;    
 }
 footer .social-icons li{
@@ -176,12 +224,18 @@ height:100%;
     #sec_3 p{
     font-size:1.9em;
     }
-    #sec_3 button{
+    #sec_3 .buton{
     border-width:2px;
     font-size:1.4em;
     }
     #sec_4 .skills_row{
 margin-top:30px;
 }
+    
+}
+@media(max-width:700px){
+    #sec_4 h5{
+    font-size:0.em;
+    }
     
 }

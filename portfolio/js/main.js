@@ -1,7 +1,36 @@
+ $('#navbar').hide();
 $(document).ready(function(){
 resizeDiv();
-/**********Typed********************/
-
+//
+$('#sendmail').submit(function(event){
+var mail=$('#email').val();
+if(mail=='')
+{
+$('.form-control').css({'border':'2px solid #d9a693'});
+event.preventDefault();    
+}
+else{
+    
+var data='email='+mail;    
+event.preventDefault();
+    $.ajax({
+    type:"POST",
+    url:'contact.php',
+    data:data,
+    success:function(data){
+        if(data=="Registered")
+        {
+            $('#sendmail').html("<h3>Thank you for showing intrest in working with Me</h3>");
+        }
+        else if(data=="Registered_already")
+         {
+         $('#sendmail').html("<h3>I already got your mail already. Sorry for the delay ,I will get back to you as soon as possible </h3>");
+         }
+    }
+});
+    
+}    
+});
 
 /****************************************/    
 });
@@ -33,7 +62,7 @@ var scrollbutpos=vph-350;
 /*******************************************/
 new WOW().init();   
     /*****************Pre Loader************/
- $('#navbar').hide();
+
 $(window).load(function() {
 $("#status").fadeOut();
 $("#preloader").delay(1000).fadeOut("slow");
