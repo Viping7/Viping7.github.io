@@ -165,8 +165,8 @@ background: #eee;
 position: fixed;
 width: 100%;    
 top:0px;   
-overflow: scroll;    
-padding-top: 30px;
+overflow-y: scroll;    
+padding-top: 100px;
 padding-bottom: 180px;    
 }
 #chat .message-section{
@@ -196,7 +196,8 @@ color: #fff;
 margin: 0px;
 border-radius:0px;
 border: none;   
-padding-top: 13px;       
+padding-top: 13px; 
+z-index: 100;    
 }
 #chat button{
 border: none;
@@ -316,6 +317,9 @@ margin-top: 15px;
         color:#175fab;
 font-size: 1.3em;    
 }
+    #chat{
+    padding-top: 30px;
+    }
     #chat, #chat .interact-section{
 width: 41.6%;    
 }
