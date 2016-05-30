@@ -164,12 +164,18 @@ text-overflow: ellipsis;
 background: #eee;
 position: fixed;
 width: 100%;    
-overflow:scroll;    
-padding-top: 30px;    
+top:0px;   
+overflow: scroll;    
+padding-top: 30px;
+padding-bottom: 180px;    
+}
+#chat .message-section{
+
+    
 }
 #chat .interact-section{
 position: fixed;
-bottom:3px;        
+bottom:0px;        
 background: #fff; 
 width: 100%;
 }

@@ -12,7 +12,7 @@ $(document).ready(function(){
  }
  $('#chat').css({height:vph+'px'});    
     
-
+  
     
 $( window ).resize(function() {
     var vpw=$('body').width(); 

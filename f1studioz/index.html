@@ -54,7 +54,8 @@
  <!-- ===================================================== CHAT SECTION ====================================================--> 
 
           <div id="home" class=" col-sm-5 tab-pane fade in active">
-            <div class="row" id='chat' ng-controller="mcon" >
+            <div class="row" id='chat' ng-controller="mcon">
+                <div class="message-section" >
              
                 <div class="col-xs-12">
                      <div class="row chat-bubble">
@@ -67,9 +68,9 @@
                   
                     </div>
                 </div> 
-                   <div class="col-xs-12"  ng-repeat="x in products" >
-                    <div class="row chat-bubble" >
-                    <div class="col-xs-8 col-sm-9 col-md-10">
+                   <div class="col-xs-12" ng-repeat="x in products">
+                    <div class="row chat-bubble">
+                    <div class="col-xs-8 col-sm-9 col-md-10" >
                        <div class="bubble you">
  {{x}}</div>
                     </div>
@@ -77,77 +78,8 @@
                         <img src="images/chat-user.png" class="img-responsive" alt=''>
                     </div>    
                     </div>    
-                </div><div class="col-xs-12">
-                     <div class="row chat-bubble">
-                      <div class="col-xs-4 col-sm-3 col-md-2">
-                   <img src="images/chat-user.png" class="img-responsive" alt=''>
-                    </div>     
-                    <div class="col-xs-8 col-sm-9 col-md-10">
-                        <div class="bubble me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex</div>
+                </div>    
                     </div>
-                  
-                    </div>
-                </div> <div class="col-xs-12">
-                     <div class="row chat-bubble">
-                      <div class="col-xs-4 col-sm-3 col-md-2">
-                   <img src="images/chat-user.png" class="img-responsive" alt=''>
-                    </div>     
-                    <div class="col-xs-8 col-sm-9 col-md-10">
-                        <div class="bubble me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex</div>
-                    </div>
-                  
-                    </div>
-                </div> <div class="col-xs-12">
-                     <div class="row chat-bubble">
-                      <div class="col-xs-4 col-sm-3 col-md-2">
-                   <img src="images/chat-user.png" class="img-responsive" alt=''>
-                    </div>     
-                    <div class="col-xs-8 col-sm-9 col-md-10">
-                        <div class="bubble me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex</div>
-                    </div>
-                  
-                    </div>
-                </div> <div class="col-xs-12">
-                     <div class="row chat-bubble">
-                      <div class="col-xs-4 col-sm-3 col-md-2">
-                   <img src="images/chat-user.png" class="img-responsive" alt=''>
-                    </div>     
-                    <div class="col-xs-8 col-sm-9 col-md-10">
-                        <div class="bubble me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex</div>
-                    </div>
-                  
-                    </div>
-                </div> <div class="col-xs-12">
-                     <div class="row chat-bubble">
-                      <div class="col-xs-4 col-sm-3 col-md-2">
-                   <img src="images/chat-user.png" class="img-responsive" alt=''>
-                    </div>     
-                    <div class="col-xs-8 col-sm-9 col-md-10">
-                        <div class="bubble me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex</div>
-                    </div>
-                  
-                    </div>
-                </div> <div class="col-xs-12">
-                     <div class="row chat-bubble">
-                      <div class="col-xs-4 col-sm-3 col-md-2">
-                   <img src="images/chat-user.png" class="img-responsive" alt=''>
-                    </div>     
-                    <div class="col-xs-8 col-sm-9 col-md-10">
-                        <div class="bubble me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex</div>
-                    </div>
-                  
-                    </div>
-                </div> <div class="col-xs-12">
-                     <div class="row chat-bubble">
-                      <div class="col-xs-4 col-sm-3 col-md-2">
-                   <img src="images/chat-user.png" class="img-responsive" alt=''>
-                    </div>     
-                    <div class="col-xs-8 col-sm-9 col-md-10">
-                        <div class="bubble me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex</div>
-                    </div>
-                  
-                    </div>
-                </div>
                 <div class="col-xs-12">
                   <div class="row interact-section">
                     <div class="col-xs-1 round-btn">
@@ -157,12 +89,12 @@
                     <div class="col-xs-8 col-sm-8 col-md-9">
                         
                            
-                            <input type="text" id='chat-box' class='form-control' placeholder='Type your Message' ng-model="addMe">
+                            <input type="text"  class='form-control' placeholder='Type your Message' ng-model='addMe'>
                                 
-                         
+                            
                     </div>  
                     <div class="col-xs-1 ">
-                        <button type="submit" ng-click='add()' class="round-btn"><i class="fa fa-send"></i></button>  
+                        <button type="submit" ng-click='add()'  class="round-btn"><i class="fa fa-send"></i></button>  
                     </div> 
                      </form>      
                     <div class="col-xs-1 round-btn option">
@@ -172,6 +104,8 @@
                 </div>      
             </div>
           </div>
+     
+
 <!-- ======================================================== CHAT SECTION ENDS ===============================================-->   
 
 <!-- ======================================================== DATA SECTION BEGINS ===============================================-->     
