@@ -164,7 +164,7 @@ text-overflow: ellipsis;
 background: #eee;
 position: fixed;
 width: 100%;    
-overflow: scroll;    
+overflow:scroll;    
 padding-top: 30px;    
 }
 #chat .interact-section{
