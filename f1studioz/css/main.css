@@ -1,0 +1,317 @@
+body{        
+font-family: 'Source Sans Pro', sans-serif;   
+overflow-x: hidden;
+}
+
+h4{
+color:#175fab;
+}
+.recommendation-header .navbar-default{ 
+    
+border-radius: 0px;       
+}
+.recommendation-header .navbar-color{
+background: #175fab;
+color:#fff;    
+}
+.recommendation-header .navbar-default .navbar-brand img{
+width:40px;
+float: left; 
+margin-right:10px;
+margin-top:-10px;
+}
+.recommendation-header .navbar-default .navbar-brand{
+color: #fff;
+font-size: 1em;    
+}
+.recommendation-header  .close{
+text-align: center;
+background: #fe0002;
+padding: 0px;   
+width: 30px;
+opacity: 1;    
+color: #fff;    
+height: 30px;    
+border-radius:180px;
+position: absolute;
+right:4px;
+margin-top: 10px;
+padding-top: 3px;    
+}
+.recommendation-header .navbar-header button{
+margin:-10px 0px;
+border: none;
+}
+#chat-header .navbar-brand{
+display: none;
+}
+.nav-tabs li{
+width:50%;
+text-align: center;    
+}
+.tab-pane{
+padding-top:80px;    
+overflow-y: auto;
+}
+#nav{
+margin-top:50px;  
+background: #fdfdfd;    
+position: fixed;   
+width:100%;    
+z-index: 100;
+opacity: 1;    
+}
+#nav a{
+border: none;
+color:#2d2d2d;    
+}
+#nav .active a{
+color:#175fab;    
+border-bottom: 3px solid #175fab;
+}
+#recommendation ul{
+margin-top: -40px;
+padding: 0px;    
+}
+#recommendation ul li{
+display: block;
+margin-top: 5px;
+}
+#recommendation .ticket-section{
+  
+border-bottom: 1px solid #f1f1f1;
+padding: 1px 15px;
+margin-top:30px;    
+margin-bottom:10px;    
+}
+#recommendation .ticket{
+max-height: 100px;
+max-width: 100%;    
+overflow: hidden;  
+padding:8px 0px;      
+
+border-bottom: 1px solid #f1f1f1;    
+}
+#recommendation .ticket:last-child{
+border-bottom: none;
+}
+#recommendation .ticket p{
+white-space: nowrap;
+overflow: hidden;    
+text-overflow: ellipsis;
+}
+
+#recommendation .ticket h4{
+color:#175fab;
+font-weight: bolder;
+}
+#recommendation h4.heading{
+font-weight: bolder;
+margin-top:30px;    
+}
+#recommendation .recommendation-main{
+background: #059ce1;
+border-radius: 5px;
+color:#fff;    
+padding:10px;    
+}
+#recommendation .recommendation-main .row{
+    margin-top:10px;}
+#recommendation .recommendation-main h5{
+font-weight: bolder;
+}
+#recommendation .recommendation-main .btn-style{
+background: none;
+border:1px solid #fff;    
+color:#fff;
+border-radius: 0px;    
+}
+#recommendation .recommendation-main .btn-style:hover{
+background: #fff;
+color:#059ce1;    
+}
+i{
+float: left;
+}
+#recommendation .insights{
+padding:10px;   
+}
+#recommendation .insights .scrollable-pane{
+overflow-y: auto;
+max-height: 230px;    
+}
+#recommendation .insights .insight-box .row{
+border-radius:5px;
+border: 1px solid #f1f1f1;    
+box-shadow: 1px 2px 3px 1px #f0f0f0;    
+max-height: 120px;    
+min-height: 120px;   
+height: 120px;    
+margin-bottom: 10px;   
+margin-left: 10px;    
+overflow:hidden;     
+}
+#recommendation .insights .insight-box p,#recommendation .insights .insight-box i{
+margin:5px;
+}
+#recommendation .insights .insight-box p.hidden{
+white-space: nowrap;    
+text-overflow: ellipsis;    
+}  
+
+/*******************************************CHAT SECTION BEGINS *****************************************/
+#chat{
+background: #eee;
+position: fixed;
+width: 100%;    
+overflow    : auto;    
+padding-top: 30px;    
+}
+#chat .interact-section{
+position: fixed;
+bottom:3px;        
+background: #fff; 
+width: 100%;
+}
+#chat .interact-section .round-btn{
+  height:30px;
+    width:30px;
+border-radius:120px;
+background: #175fab;    
+margin-left:3px;
+margin-top:5px;    
+}
+#chat .interact-section .round-btn a i{
+margin-left:-6px;
+margin-top:8px;    
+color: #fff;    
+}
+#chat .interact-section .form-control{
+margin: 0px;
+border-radius:0px;
+border: none;   
+padding-top: 13px;       
+}
+#chat button{
+border: none;
+color: #fff;    
+}
+#chat i{
+color:#fff;
+}
+.option{
+left:20px;    
+}
+.fa-ellipsis-h{
+margin-top: 8px;
+margin-left:-5px;    
+}
+/******************************************************Tool Tip***************************************/
+.tooltip-content li{
+background: #175fab;
+padding:5px 3px;
+text-align: center;    
+margin-top:3px;    
+}
+.tooltip-content li a{
+color:#fff;
+}
+.tooltip-content li:hover{
+background: #fff;
+border: 1px solid #175fab;
+}
+.tooltip-content li a:hover{
+color: #175fab;  
+text-decoration: none;    
+}
+
+/*****************************************************Bubble********************************************/
+.chat-bubble:first-of-type{
+padding:20px;    
+}
+.bubble{
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+}
+
+.bubble::before {
+    background-color: #fff;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+
+.me {
+    float: left;   
+    margin: 5px 45px 5px 20px;         
+}
+
+.me::before {
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;           
+}
+
+.you {
+    float: right;    
+    margin: 5px 20px 5px 45px;         
+}
+
+.you::before {
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;    
+}
+
+
+
+
+@media(min-width:740px){
+    #recommendation  .first-section{
+    border-bottom: 1px solid #f1f1f1;
+    }
+    #recommendation .detail-section{
+    padding-top:30px;     
+    }
+    #recommendation .ticket-section{
+    border-top: none;
+    border-bottom: none;    
+    border-left: 2px solid #f1f1f1;
+    }
+    #recommendation .recommendation-main .btn-style{
+    margin-top: 20px;
+    margin-left: 0px;    
+    }
+    #recommendation ul{
+    margin-top: 30px;
+    margin-left: 30px;  
+    }
+    #recommendation ul li{
+    font-size:1.2em;    
+margin-top: 15px;
+}
+  #tabs{
+    margin-top:30px;
+    }
+    #chat-header .navbar-brand{
+        display: block;
+        color:#175fab;
+font-size: 1.3em;    
+}
+    #chat, #chat .interact-section{
+width: 41.6%;    
+}
+  
+}
