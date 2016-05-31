@@ -48,13 +48,13 @@
                 <li><a data-toggle="tab" href="#menu1">RECOMMENDATION</a></li>
             </ul>
 
-<div id='tabs' class="tab-content" ng-app='chatlist'>
+<div id='tabs' class="tab-content" data-ng-app='chatlist'>
 <div class="container-fluid">    
     <div class="row">
  <!-- ===================================================== CHAT SECTION ====================================================--> 
 
           <div id="home" class=" col-sm-5 tab-pane fade in active">
-            <div class="row" id='chat' ng-controller="mcon">
+            <div class="row" id='chat' data-ng-controller="mcon">
                 <div class="message-section" >
              
                 <div class="col-xs-12">
@@ -68,7 +68,7 @@
                   
                     </div>
                 </div> 
-                   <div class="col-xs-12" ng-repeat="x in messages">
+                   <div class="col-xs-12" data-ng-repeat="x in messages">
                     <div class="row chat-bubble">
                     <div class="col-xs-8 col-sm-9 col-md-10" >
                        <div class="bubble you">
@@ -85,17 +85,18 @@
                     <div class="col-xs-1 round-btn">
                         <a href='#'><i class="fa fa-refresh"></i></a>  
                     </div>
+                      <form id='message' >
                       <div class="col-xs-8 col-sm-8 col-md-9 form-group">
-                      <form id='message' role="form">
+                      
                     
                         
                            
-                            <input type="text" autofocus class='form-control' placeholder='Type your Message' ng-model='addMe' id='mesg'>
+                            <input type="text" autofocus class='form-control' placeholder='Type your Message' data-ng-model='addMe' id='mesg'>
                                 
                             
                     </div>  
                     <div class="col-xs-1 ">
-                        <button type="submit" ng-click='add()' value=""  class="round-btn"><i class="fa fa-send"></i></button>  
+                        <button type="submit" data-ng-click='add()' value=""  class="round-btn"><i class="fa fa-send"></i></button>  
                     </div> 
                      </form>      
                     <div class="col-xs-1 round-btn option">
