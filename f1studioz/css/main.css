@@ -169,15 +169,16 @@ overflow-y: scroll;
 padding-top: 100px;
 padding-bottom: 180px;    
 }
-#chat .message-section{
 
-    
-}
 #chat .interact-section{
 position: fixed;
 bottom:0px;        
 background: #fff; 
 width: 100%;
+}
+#chat .interact-section input[type='text']:focus{
+box-shadow: none;
+border-bottom:2px solid #175fab;    
 }
 #chat .interact-section .round-btn{
   height:30px;
@@ -319,6 +320,7 @@ font-size: 1.3em;
 }
     #chat{
     padding-top:50px;
+    padding-bottom:230px;
     }
     #chat, #chat .interact-section{
 width: 41.6%;    

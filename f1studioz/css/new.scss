@@ -1,0 +1,356 @@
+$defaultfont:   Source Sans Pro, sans-serif;
+$maincolor: #175fab;
+
+body{        
+font-family: $defaultfont;   
+overflow-x: hidden;
+}
+
+h4{
+color:$maincolor;
+}
+.recommendation-header {
+ 
+    .navbar-color{
+        background: $maincolor;
+        color:#fff;    
+        }  
+     .navbar-default{  
+        border-radius: 0px;
+         
+     .navbar-brand{
+        color: #fff;
+        font-size: 1em;    
+            img{
+            width:40px;
+            float: left; 
+            margin-right:10px;
+            margin-top:-10px;
+            }
+      }
+    }
+     .close{
+        text-align: center;
+        background: #fe0002;
+        padding: 0px;   
+        width: 30px;
+        opacity: 1;    
+        color: #fff;    
+        height: 30px;    
+        border-radius:180px;
+        position: absolute;
+        right:4px;
+        margin-top: 10px;
+        padding-top: 3px;    
+    }
+    .navbar-header button{
+        margin:-10px 0px;
+        border: none;
+    }
+}
+#chat-header .navbar-brand{
+display: none;
+}
+.nav-tabs li{
+width:50%;
+text-align: center;    
+}
+.tab-pane{
+padding-top:80px;    
+overflow-y: auto;
+}
+#nav{
+    margin-top:50px;  
+    background: #fdfdfd;    
+    position: fixed;   
+    width:100%;    
+    z-index: 100;
+    opacity: 1;    
+
+     a{
+        border: none;
+        color:#2d2d2d;    
+    }
+     .active a{
+        color:$maincolor;    
+        border-bottom: 3px solid $maincolor;
+     }
+}
+#recommendation {
+    ul{
+        margin-top: -40px;
+        padding: 0px;    
+    
+        li{
+            display: block;
+            margin-top: 5px;
+        }
+    }
+    .ticket-section{
+        border-bottom: 1px solid #f1f1f1;
+        padding: 1px 15px;
+        margin-top:30px;    
+        margin-bottom:10px;    
+    }
+    
+    .ticket:last-child{
+        border-bottom: none;
+    
+    }
+    .ticket{
+        max-height: 100px;
+        max-width: 100%;    
+        overflow: hidden;  
+        padding:8px 0px;      
+        border-bottom: 1px solid #f1f1f1;    
+    
+            p{
+                white-space: nowrap;
+                overflow: hidden;    
+                text-overflow: ellipsis;
+            }
+
+            h4{
+                color:$maincolor;
+                font-weight: bolder;
+            }
+    }
+    h4.heading{
+        font-weight: bolder;
+        margin-top:30px;    
+    }
+    .recommendation-main{
+        background: #059ce1;
+        border-radius: 5px;
+        color:#fff;    
+        padding:10px;    
+    
+        .row{
+            margin-top:10px;
+        }
+        h5{
+            font-weight: bolder;
+        }
+        .btn-style{
+            background: none;
+            border:1px solid #fff;    
+            color:#fff;
+            border-radius: 0px;    
+        }
+        .btn-style:hover{
+            background: #fff;
+            color:#059ce1;    
+        }
+    }
+    .insights{
+        padding:10px;   
+   
+        .scrollable-pane{
+            overflow-y: auto;
+            max-height: 230px;    
+        }
+        .insight-box{ 
+            .row{
+                border-radius:5px;
+                border: 1px solid #f1f1f1;    
+                box-shadow: 1px 2px 3px 1px #f0f0f0;    
+                max-height: 120px;    
+                min-height: 120px;   
+                height: 120px;    
+                margin-bottom: 10px;   
+                margin-left: 10px;    
+                overflow:hidden;     
+            }
+            p, i{
+                 margin:5px;
+            }
+            p.hidden{
+                 white-space: nowrap;    
+                 text-overflow: ellipsis;    
+            } 
+        }
+    }
+}
+i{
+float: left;
+}
+/*******************************************CHAT SECTION BEGINS *****************************************/
+#chat{
+    background: #eee;
+    position: fixed;
+    width: 100%;    
+    top:0px;   
+    overflow-y: scroll;    
+    padding-top: 100px;
+    padding-bottom: 180px;    
+
+
+    .interact-section{
+        position: fixed;
+        bottom:0px;        
+        background: #fff; 
+        width: 100%;
+    
+        input[type='text']:focus{
+            box-shadow: none;
+            border-bottom:2px solid $maincolor;    
+        }
+        .round-btn{
+            height:30px;
+            width:30px;
+            border-radius:120px;
+            background: $maincolor;    
+            margin-left:3px;
+            margin-top:5px;    
+        
+            a i{
+                margin-left:-6px;
+                margin-top:8px;    
+                color: #fff;    
+            }
+        }
+        .form-control{
+            margin: 0px;
+            border-radius:0px;
+            border: none;   
+            padding-top: 13px; 
+            z-index: 100;    
+        }
+    }
+    button{
+        border: none;
+        color: #fff;    
+    }
+    i{
+        color:#fff;
+    }
+}
+.option{
+left:20px;    
+}
+.fa-ellipsis-h{
+margin-top: 8px;
+margin-left:-5px;    
+}
+/******************************************************Tool Tip***************************************/
+.tooltip-content {
+    li{
+    background: $maincolor;
+    padding:5px 3px;
+    text-align: center;    
+    margin-top:3px;    
+    
+         a{
+            color:#fff;
+        }
+    }
+    li:hover{
+    background: #fff;
+    border: 1px solid $maincolor;
+    }
+    li a:hover{
+    color: $maincolor;  
+    text-decoration: none;    
+    }
+}
+
+/*****************************************************Bubble********************************************/
+    .chat-bubble:first-of-type{
+    padding:20px;    
+    }
+    .bubble{
+        background-color: #fff;
+        border-radius: 2px;
+        box-shadow: 0 0 6px #B2B2B2;
+        display: inline-block;
+        padding: 10px 18px;
+        position: relative;
+        vertical-align: top;
+        width: 100%;
+    }
+    @mixin transform() {
+            transform:         rotate( 29deg ) skew( -35deg );
+            -moz-transform:    rotate( 29deg ) skew( -35deg );
+            -ms-transform:     rotate( 29deg ) skew( -35deg );
+            -o-transform:      rotate( 29deg ) skew( -35deg );
+            -webkit-transform: rotate( 29deg ) skew( -35deg );
+    }
+    .bubble::before {
+        background-color: #fff;
+        content: "\00a0";
+        display: block;
+        height: 16px;
+        position: absolute;
+        top: 11px;
+        @include  transform();   
+        width:  20px;
+    }
+
+.me {
+    float: left;   
+    margin: 5px 45px 5px 20px;         
+}
+
+.me::before {
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;           
+}
+
+.you {
+    float: right;    
+    margin: 5px 20px 5px 45px;         
+}
+
+.you::before {
+    box-shadow: 2px -2px 2px 0 rgba( 178, 178, 178, .4 );
+    right: -9px;    
+}
+
+
+
+
+@media(min-width:740px){
+    #recommendation {
+        .first-section{
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .detail-section{
+            padding-top:30px;     
+        }
+        .ticket-section{
+            border-top: none;
+            border-bottom: none;    
+            border-left: 2px solid #f1f1f1;
+        }
+        .recommendation-main .btn-style{
+            margin-top: 20px;
+            margin-left: 0px;    
+        }
+        ul{
+            margin-top: 30px;
+            margin-left: 30px;  
+        
+            li{
+            font-size:1.2em;    
+            margin-top: 15px;
+            }
+        }
+    }
+    #tabs{
+        margin-top:30px;
+    }
+    #chat-header .navbar-brand{
+        display: block;
+        color:$maincolor;
+        font-size: 1.3em;    
+    }
+    #chat{
+    padding-top:50px;
+    padding-bottom:230px;
+    }
+     #chat,#chat .interact-section{
+    width: 41.6%;    
+    }
+  
+}
+    

@@ -12,7 +12,9 @@ $(document).ready(function(){
  }
  $('#chat').css({height:vph+'px'});    
     
-  
+    $('#message').submit(function(){
+    $("#message")[0].reset();
+    });
     
 $( window ).resize(function() {
     var vpw=$('body').width(); 
@@ -36,9 +38,10 @@ else{
 /*******************************************************Angular Js************************************************/
 var app=angular.module('chatlist',[]);
 var mycon=function($scope){
-              $scope.products = [];
+              $scope.messages = [];
               $scope.add=function(){
-              $scope.products.push($scope.addMe);
+              $scope.messages.push($scope.addMe);
+                   
               }    
             };
 var con=app.controller('mcon',mycon);
